@@ -4,16 +4,17 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import base.files.BaseFiles;
 
 public class SwagLabs extends BaseFiles {
 	
-	      @Test
-		  public void TC001() throws InterruptedException {
+	      @Test(dataProvider = "testData")
+		  public void TC001(String product) throws InterruptedException {
 			
 			//Add Item to Cart
-			driver.findElement(By.id("add-to-cart-sauce-labs-fleece-jacket")).click();
+			driver.findElement(By.id(product)).click();
 			
 			//Add to Cart
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -37,4 +38,18 @@ public class SwagLabs extends BaseFiles {
 			System.out.println("Executed: Test Case 1: Sauce Labs Fleece Jacket");
 			
 		  }
+	      
+	      @DataProvider(name = "testData")
+	      public Object[] DataDriven() {
+			
+	    	  return new Object[]
+	    	  {
+	    		  "add-to-cart-sauce-labs-fleece-jacket",
+	    		  "add-to-cart-sauce-labs-backpack",
+	    		  "add-to-cart-sauce-labs-bolt-t-shirt",
+	    		  "add-to-cart-test.allthethings()-t-shirt-(red)",
+	    		  "add-to-cart-sauce-labs-bike-light",
+	    		  "add-to-cart-sauce-labs-onesie"
+	    	  };
+	      }
 }

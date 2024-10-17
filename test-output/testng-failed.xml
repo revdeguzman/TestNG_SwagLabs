@@ -5,8 +5,8 @@
     <classes>
       <class name="test.cases.SwagLabs">
         <methods>
+          <include name="TC002" invocation-numbers="0 1 2 3 4 5"/>
           <include name="setUp"/>
-          <include name="TC001"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- test.cases.SwagLabs -->

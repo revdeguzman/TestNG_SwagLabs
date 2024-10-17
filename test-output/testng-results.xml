@@ -1,25 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-16T22:42:47 CST" name="Suite" finished-at="2024-10-16T22:42:55 CST" duration-ms="7422">
+  <suite started-at="2024-10-17T16:14:11 PST" name="Default suite" finished-at="2024-10-17T16:14:26 PST" duration-ms="15072">
     <groups>
     </groups>
-    <test started-at="2024-10-16T22:42:47 CST" name="Test" finished-at="2024-10-16T22:42:55 CST" duration-ms="7422">
+    <test started-at="2024-10-17T16:14:11 PST" name="Default test" finished-at="2024-10-17T16:14:26 PST" duration-ms="15072">
       <class name="test.cases.SwagLabs">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.cases.SwagLabs@6989da5e]" started-at="2024-10-16T22:42:47 CST" name="setUp" finished-at="2024-10-16T22:42:53 CST" duration-ms="6059" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:11 PST" name="setUp" finished-at="2024-10-17T16:14:17 PST" duration-ms="5380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC001()[pri:0, instance:test.cases.SwagLabs@6989da5e]" started-at="2024-10-16T22:42:53 CST" name="TC001" finished-at="2024-10-16T22:42:54 CST" duration-ms="880" status="PASS">
+        <test-method signature="TC001(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:17 PST" name="TC001" data-provider="testData" finished-at="2024-10-17T16:14:17 PST" duration-ms="863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-fleece-jacket]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.cases.SwagLabs@6989da5e]" started-at="2024-10-16T22:42:54 CST" name="closeBrowser" finished-at="2024-10-16T22:42:55 CST" duration-ms="403" status="PASS">
+        <test-method signature="TC001(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:17 PST" name="TC001" data-provider="testData" finished-at="2024-10-17T16:14:18 PST" duration-ms="831" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-backpack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method signature="TC001(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:18 PST" name="TC001" data-provider="testData" finished-at="2024-10-17T16:14:19 PST" duration-ms="1019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-bolt-t-shirt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method signature="TC001(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:19 PST" name="TC001" data-provider="testData" finished-at="2024-10-17T16:14:21 PST" duration-ms="1497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-test.allthethings()-t-shirt-(red)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method signature="TC001(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:21 PST" name="TC001" data-provider="testData" finished-at="2024-10-17T16:14:22 PST" duration-ms="1327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-bike-light]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method signature="TC001(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:22 PST" name="TC001" data-provider="testData" finished-at="2024-10-17T16:14:24 PST" duration-ms="1405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-onesie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method signature="TC002(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:24 PST" name="TC002" data-provider="testData" finished-at="2024-10-17T16:14:24 PST" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-fleece-jacket]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method signature="TC002(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:24 PST" name="TC002" data-provider="testData" finished-at="2024-10-17T16:14:24 PST" duration-ms="152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-backpack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method signature="TC002(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:24 PST" name="TC002" data-provider="testData" finished-at="2024-10-17T16:14:24 PST" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-bolt-t-shirt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method signature="TC002(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:24 PST" name="TC002" data-provider="testData" finished-at="2024-10-17T16:14:24 PST" duration-ms="142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-test.allthethings()-t-shirt-(red)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method signature="TC002(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:24 PST" name="TC002" data-provider="testData" finished-at="2024-10-17T16:14:24 PST" duration-ms="144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-bike-light]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method signature="TC002(java.lang.String)[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:24 PST" name="TC002" data-provider="testData" finished-at="2024-10-17T16:14:26 PST" duration-ms="1280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[add-to-cart-sauce-labs-onesie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.cases.SwagLabs@5e2c3d18]" started-at="2024-10-17T16:14:26 PST" name="closeBrowser" finished-at="2024-10-17T16:14:26 PST" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- test.cases.SwagLabs -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

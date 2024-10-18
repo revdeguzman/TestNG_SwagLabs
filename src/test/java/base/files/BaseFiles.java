@@ -22,6 +22,7 @@ public class BaseFiles {
 	public static WebDriver driver;
 	public static Properties prop = new Properties();
 	public static Properties loc = new Properties();
+	public static Properties cus = new Properties();
 	public static FileReader file;
 	
 	@BeforeTest
@@ -32,14 +33,15 @@ public class BaseFiles {
 			//Create new object that locate properties file
 			FileReader file = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\config.properties");
 			FileReader file2 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\login_page.properties");
+			FileReader file3 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\customer.properties");
 			
 			//Read properties File
 			prop.load(file);
 			loc.load(file2);
+			cus.load(file3);
 		}
 		
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
-			
 			//Set up Chrome Driver
 			WebDriverManager.chromedriver().setup();
 			
@@ -59,8 +61,8 @@ public class BaseFiles {
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			
 			//Input User name and Password
-			driver.findElement(By.xpath(loc.getProperty("xpath_username"))).sendKeys("standard_user");
-			driver.findElement(By.xpath(loc.getProperty("xpath_password"))).sendKeys("secret_sauce");
+			driver.findElement(By.xpath(loc.getProperty("xpath_username"))).sendKeys(loc.getProperty("username"));
+			driver.findElement(By.xpath(loc.getProperty("xpath_password"))).sendKeys(loc.getProperty("password"));
 			
 			//Click Login
 			driver.findElement(By.xpath(loc.getProperty("xpath_login_button"))).click();
@@ -87,8 +89,8 @@ public class BaseFiles {
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 				
 				//Input User name and Password
-				driver.findElement(By.xpath(loc.getProperty("xpath_username"))).sendKeys("standard_user");
-				driver.findElement(By.xpath(loc.getProperty("xpath_password"))).sendKeys("secret_sauce");
+				driver.findElement(By.xpath(loc.getProperty("xpath_username"))).sendKeys(loc.getProperty("username"));
+				driver.findElement(By.xpath(loc.getProperty("xpath_password"))).sendKeys(loc.getProperty("password"));
 				
 				//Click Login
 				driver.findElement(By.xpath(loc.getProperty("xpath_login_button"))).click();
@@ -114,8 +116,8 @@ public class BaseFiles {
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			
 			//Input User name and Password
-			driver.findElement(By.xpath(loc.getProperty("xpath_username"))).sendKeys("standard_user");
-			driver.findElement(By.xpath(loc.getProperty("xpath_password"))).sendKeys("secret_sauce");
+			driver.findElement(By.xpath(loc.getProperty("xpath_username"))).sendKeys(loc.getProperty("username"));
+			driver.findElement(By.xpath(loc.getProperty("xpath_password"))).sendKeys(loc.getProperty("password"));
 			
 			//Click Login
 			driver.findElement(By.xpath(loc.getProperty("xpath_login_button"))).click();
@@ -129,12 +131,15 @@ public class BaseFiles {
 			
 		//Menu is Clicked.
 		driver.findElement(By.id("react-burger-menu-btn")).click();
-		  
+		
 		//Menu - Logout
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		//Click Logout
 		driver.findElement(By.id("logout_sidebar_link")).click();
+				
+		//Close Browser
+		driver.close();
 		
 		//Quit the Drivers
 		driver.quit();

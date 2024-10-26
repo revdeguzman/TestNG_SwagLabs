@@ -3,7 +3,6 @@ package test.cases;
 import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import base.files.BaseFiles;

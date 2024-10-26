@@ -3,13 +3,10 @@ package base.files;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chromium.HasCdp;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
@@ -68,6 +65,7 @@ public class BaseFiles {
 			driver.findElement(By.xpath(loc.getProperty("xpath_login_button"))).click();
 			
 		}
+		
 		else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
 			
 				//Set up Firefox Driver
@@ -95,6 +93,7 @@ public class BaseFiles {
 				//Click Login
 				driver.findElement(By.xpath(loc.getProperty("xpath_login_button"))).click();
 		}
+		
 		else if (prop.getProperty("browser").equalsIgnoreCase("edge")) {
 			
 			//Set up Edge Driver

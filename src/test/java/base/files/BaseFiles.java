@@ -11,7 +11,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseFiles {
@@ -52,7 +51,7 @@ public class BaseFiles {
 			driver.manage().deleteAllCookies();
 
 			//Set URL to the Browser
-			driver.get("https://www.saucedemo.com/");
+			driver.get(prop.getProperty("testurl"));
 			
 			//Wait for the elements to load.
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -81,7 +80,7 @@ public class BaseFiles {
 				driver.manage().deleteAllCookies();
 
 				//Set URL to the Browser
-				driver.get("https://www.saucedemo.com/");
+				driver.get(prop.getProperty("testurl"));
 				
 				//Wait for the elements to load.
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -109,7 +108,7 @@ public class BaseFiles {
 			driver.manage().deleteAllCookies();
 
 			//Set URL to the Browser
-			driver.get("https://www.saucedemo.com/");
+			driver.get(prop.getProperty("testurl"));
 			
 			//Wait for the elements to load.
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

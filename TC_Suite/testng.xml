@@ -4,13 +4,7 @@
   <test thread-count="5" name="Test_1">
     <classes>
 	    <class name="base.files.BaseFiles"/>
-    	<class name="test.cases.InvalidCredentials"/>
-    </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="Test_2">
-    <classes>
-	    <class name="base.files.BaseFiles"/>
-    	<class name="test.cases.SwagLabs"/>
+    	<class name="file.reader.ReadExcel"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

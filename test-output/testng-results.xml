@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-27T02:10:01 CST" name="Default suite" finished-at="2024-10-27T02:10:20 CST" duration-ms="19471">
+  <suite started-at="2024-10-28T20:47:23 CST" name="Default suite" finished-at="2024-10-28T20:47:42 CST" duration-ms="19458">
     <groups>
     </groups>
-    <test started-at="2024-10-27T02:10:01 CST" name="Default test" finished-at="2024-10-27T02:10:20 CST" duration-ms="19471">
+    <test started-at="2024-10-28T20:47:23 CST" name="Default test" finished-at="2024-10-28T20:47:42 CST" duration-ms="19458">
       <class name="test.cases.SwagLabs">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.cases.SwagLabs@302552ec]" started-at="2024-10-27T02:10:01 CST" name="setUp" finished-at="2024-10-27T02:10:05 CST" duration-ms="4394" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.cases.SwagLabs@302552ec]" started-at="2024-10-28T20:47:23 CST" name="setUp" finished-at="2024-10-28T20:47:26 CST" duration-ms="3515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@302552ec]" started-at="2024-10-27T02:10:06 CST" name="EndToEnd" data-provider="excelData" finished-at="2024-10-27T02:10:19 CST" duration-ms="12982" status="PASS">
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@302552ec]" started-at="2024-10-28T20:47:28 CST" name="EndToEnd" data-provider="excelData" finished-at="2024-10-28T20:47:41 CST" duration-ms="13445" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndToEnd -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.cases.SwagLabs@302552ec]" started-at="2024-10-27T02:10:19 CST" name="closeBrowser" finished-at="2024-10-27T02:10:20 CST" duration-ms="704" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.cases.SwagLabs@302552ec]" started-at="2024-10-28T20:47:41 CST" name="closeBrowser" finished-at="2024-10-28T20:47:42 CST" duration-ms="866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -106,5 +106,5 @@ public class SwagLabs extends BaseFiles {
 	    	//Click Home
 			driver.findElement(By.xpath("//*[@id=\"back-to-products\"]")).click();
 			
-	      } // Testing
+	      }
 }

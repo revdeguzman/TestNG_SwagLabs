@@ -1,5 +1,6 @@
 package base.files;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.testng.ITestContext;
@@ -19,21 +20,28 @@ public class Listeners implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		ITestListener.super.onTestSuccess(result);
+		
+        String passedFolder = System.getProperty("user.dir") + "\\Screenshots\\Passed";
+        new File(passedFolder).mkdirs(); // Ensure the directory exists
+        try {
+            sshot.FullPageScreenShot(passedFolder);
+        } catch (InterruptedException | IOException e) {
+            e.printStackTrace();
+        }
+		
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		ITestListener.super.onTestFailure(result);
 		
-		//Screenshot
-	    try {
-			sshot.FullPageScreenShot();
-		} catch (InterruptedException | IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        String failedFolder = System.getProperty("user.dir") + "\\Screenshots\\Failed";
+        new File(failedFolder).mkdirs(); // Ensure the directory exists
+        try {
+            sshot.FullPageScreenShot(failedFolder);
+        } catch (InterruptedException | IOException e) {
+            e.printStackTrace();
+        }
 		
 	}
 

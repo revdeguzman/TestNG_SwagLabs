@@ -9,8 +9,8 @@
       <class name="test.cases.SwagLabs">
         <methods>
           <include name="setUp"/>
-          <include name="FailedTest" invocation-numbers="0"/>
           <include name="closeBrowser"/>
+          <include name="TestFailure" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.cases.SwagLabs -->
     </classes>

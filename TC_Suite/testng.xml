@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<listeners>
-		<listener class-name="base.files.Listerers"></listener>
+		<listener class-name="base.files.Listeners"></listener>
 	</listeners>
   <test thread-count="5" name="Test_1">
     <classes>
-    	<class name="file.reader.ReadExcel"/>
+    	<class name="test.cases.SwagLabs"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

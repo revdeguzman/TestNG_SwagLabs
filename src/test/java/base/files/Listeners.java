@@ -20,13 +20,13 @@ public class Listeners implements ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		
-        String passedFolder = System.getProperty("user.dir") + "\\Screenshots\\Passed";
-        new File(passedFolder).mkdirs(); // Ensure the directory exists
-        try {
-            sshot.FullPageScreenShot(passedFolder);
-        } catch (InterruptedException | IOException e) {
-            e.printStackTrace();
-        }
+//        String passedFolder = System.getProperty("user.dir") + "\\Screenshots\\Passed";
+//        new File(passedFolder).mkdirs(); // Ensure the directory exists
+//        try {
+//            sshot.FullPageScreenShot(passedFolder);
+//        } catch (InterruptedException | IOException e) {
+//            e.printStackTrace();
+//        }
 		
 	}
 

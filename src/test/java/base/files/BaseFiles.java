@@ -30,7 +30,7 @@ public class BaseFiles {
 			FileReader file = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\config.properties");
 			FileReader file2 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\login_page.properties");
 			FileReader file3 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\customer.properties");
-			
+	
 			//Read properties File
 			prop.load(file);
 			loc.load(file2);

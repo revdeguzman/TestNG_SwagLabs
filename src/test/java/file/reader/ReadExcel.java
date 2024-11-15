@@ -35,8 +35,8 @@ public class ReadExcel {
 		//Store the total rows from Excel
 		int totalRows = sheetName.getLastRowNum();
 		
-		//Print total Rows
-		System.out.println("Total Rows is: " + totalRows);
+//		//Print total Rows
+//		System.out.println("Total Rows is: " + totalRows);
 		
 		//Get the column count from Excel
 		Row rowCells = sheetName.getRow(0);
@@ -44,8 +44,8 @@ public class ReadExcel {
 		//Store the total column from Excel
 		int totalCols = rowCells.getLastCellNum();
 		
-		//Print total Column
-		System.out.println("Total Columns: " + totalCols);
+//		//Print total Column
+//		System.out.println("Total Columns: " + totalCols);
 		
 		//Format the Data get from Excel
 		DataFormatter format = new DataFormatter();
@@ -60,7 +60,7 @@ public class ReadExcel {
 				
 				//Format the Data get from Excel
 				testData[i-1][j] = format.formatCellValue(sheetName.getRow(i).getCell(j));
-				System.out.println(testData[i-1][j]);
+//				System.out.println(testData[i-1][j]);
 
 			}
 			

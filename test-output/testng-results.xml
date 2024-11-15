@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-28T22:08:12 CST" name="Suite" finished-at="2024-10-28T22:08:28 CST" duration-ms="15995">
+  <suite started-at="2024-11-15T11:02:45 PST" name="Suite" finished-at="2024-11-15T11:03:12 PST" duration-ms="27524">
     <groups>
     </groups>
-    <test started-at="2024-10-28T22:08:12 CST" name="Test_1" finished-at="2024-10-28T22:08:28 CST" duration-ms="15995">
+    <test started-at="2024-11-15T11:02:45 PST" name="Test_1" finished-at="2024-11-15T11:03:12 PST" duration-ms="27524">
       <class name="test.cases.SwagLabs">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.cases.SwagLabs@79079097]" started-at="2024-10-28T22:08:12 CST" name="setUp" finished-at="2024-10-28T22:08:16 CST" duration-ms="3562" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:02:45 PST" name="setUp" finished-at="2024-11-15T11:02:51 PST" duration-ms="6047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@79079097]" started-at="2024-10-28T22:08:19 CST" name="EndToEnd" data-provider="excelData" finished-at="2024-10-28T22:08:20 CST" duration-ms="1327" status="PASS">
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:02:52 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:02:56 PST" duration-ms="3680" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,17 +25,17 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Test First Name]]>
+                <![CDATA[Test First Name 1]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test Last Name]]>
+                <![CDATA[Test Last Name 1]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Test Zip Code]]>
+                <![CDATA[Test Zip Code 1]]>
               </value>
             </param>
             <param index="5">
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndToEnd -->
-        <test-method signature="TestFailure(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@79079097]" started-at="2024-10-28T22:08:25 CST" name="TestFailure" data-provider="excelData" finished-at="2024-10-28T22:08:26 CST" duration-ms="222" status="FAIL">
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:02:56 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:02:59 PST" duration-ms="3021" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,27 +61,27 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Sauce Labs Backpack]]>
+                <![CDATA[Sauce Labs Bike Light]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Test First Name]]>
+                <![CDATA[Test First Name 2]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test Last Name]]>
+                <![CDATA[Test Last Name 2]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Test Zip Code]]>
+                <![CDATA[Test Zip Code 2]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Sauce Labs Backpack]]>
+                <![CDATA[Sauce Labs Bike Light]]>
               </value>
             </param>
             <param index="6">
@@ -90,52 +90,174 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Sauce Labs Backpack] but found [Sauce Labs Bike Light]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Sauce Labs Backpack] but found [Sauce Labs Bike Light]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at test.cases.SwagLabs.TestFailure(SwagLabs.java:82)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestFailure -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.cases.SwagLabs@79079097]" started-at="2024-10-28T22:08:28 CST" name="closeBrowser" finished-at="2024-10-28T22:08:28 CST" duration-ms="498" status="PASS">
+        </test-method> <!-- EndToEnd -->
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:02:59 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:03:02 PST" duration-ms="3007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Swag Labs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sauce Labs Bolt T-Shirt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test First Name 3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Last Name 3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Zip Code 3]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Sauce Labs Bolt T-Shirt]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Thank you for your order!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndToEnd -->
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:03:02 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:03:05 PST" duration-ms="2820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Swag Labs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sauce Labs Fleece Jacket]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test First Name 4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Last Name 4]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Zip Code 4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Sauce Labs Fleece Jacket]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Thank you for your order!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndToEnd -->
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:03:05 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:03:08 PST" duration-ms="2911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Swag Labs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sauce Labs Onesie]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test First Name 5]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Last Name 5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Zip Code 5]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Sauce Labs Onesie]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Thank you for your order!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndToEnd -->
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:03:08 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:03:11 PST" duration-ms="3022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Swag Labs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test.allTheThings() T-Shirt (Red)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test First Name 6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test Last Name 6]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test Zip Code 6]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test.allTheThings() T-Shirt (Red)]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Thank you for your order!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndToEnd -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:03:11 PST" name="closeBrowser" finished-at="2024-11-15T11:03:12 PST" duration-ms="1638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

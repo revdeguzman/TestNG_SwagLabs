@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-15T11:02:45 PST" name="Suite" finished-at="2024-11-15T11:03:12 PST" duration-ms="27524">
+  <suite started-at="2024-11-21T09:40:27 PST" name="Suite" finished-at="2024-11-21T09:41:03 PST" duration-ms="36378">
     <groups>
     </groups>
-    <test started-at="2024-11-15T11:02:45 PST" name="Test_1" finished-at="2024-11-15T11:03:12 PST" duration-ms="27524">
+    <test started-at="2024-11-21T09:40:27 PST" name="Test_1" finished-at="2024-11-21T09:41:03 PST" duration-ms="36378">
       <class name="test.cases.SwagLabs">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:02:45 PST" name="setUp" finished-at="2024-11-15T11:02:51 PST" duration-ms="6047" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-21T09:40:27 PST" name="setUp" finished-at="2024-11-21T09:40:36 PST" duration-ms="9318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:02:52 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:02:56 PST" duration-ms="3680" status="PASS">
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-21T09:40:39 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-21T09:40:43 PST" duration-ms="4423" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndToEnd -->
-        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:02:56 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:02:59 PST" duration-ms="3021" status="PASS">
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-21T09:40:43 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-21T09:40:47 PST" duration-ms="3715" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndToEnd -->
-        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:02:59 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:03:02 PST" duration-ms="3007" status="PASS">
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-21T09:40:47 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-21T09:40:51 PST" duration-ms="3891" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndToEnd -->
-        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:03:02 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:03:05 PST" duration-ms="2820" status="PASS">
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-21T09:40:51 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-21T09:40:54 PST" duration-ms="3875" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -175,7 +175,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndToEnd -->
-        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:03:05 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:03:08 PST" duration-ms="2911" status="PASS">
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-21T09:40:54 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-21T09:40:58 PST" duration-ms="3852" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -216,7 +216,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndToEnd -->
-        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:03:08 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-15T11:03:11 PST" duration-ms="3022" status="PASS">
+        <test-method signature="EndToEnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-21T09:40:58 PST" name="EndToEnd" data-provider="excelData" finished-at="2024-11-21T09:41:02 PST" duration-ms="4048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -257,7 +257,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndToEnd -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-15T11:03:11 PST" name="closeBrowser" finished-at="2024-11-15T11:03:12 PST" duration-ms="1638" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.cases.SwagLabs@221a3fa4]" started-at="2024-11-21T09:41:02 PST" name="closeBrowser" finished-at="2024-11-21T09:41:03 PST" duration-ms="811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

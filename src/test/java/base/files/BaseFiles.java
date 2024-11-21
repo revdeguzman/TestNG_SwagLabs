@@ -18,6 +18,7 @@ public class BaseFiles {
 	public static WebDriver driver;
 	public static Properties prop = new Properties();
 	public static Properties loc = new Properties();
+	public static Properties log = new Properties();
 	public static Properties cus = new Properties();
 	public static FileReader file;
 	
@@ -27,14 +28,16 @@ public class BaseFiles {
 		if(driver == null) {
 			
 			//Create new object that locate properties file
-			FileReader file = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\config.properties");
+			FileReader file1 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\config.properties");
 			FileReader file2 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\login_page.properties");
-			FileReader file3 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\customer.properties");
+			FileReader file3 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\logout_page.properties");
+			FileReader file4 = new FileReader(System.getProperty("user.dir") + "\\src\\test\\resources\\config_files\\customer.properties");
 	
 			//Read properties File
-			prop.load(file);
+			prop.load(file1);
 			loc.load(file2);
-			cus.load(file3);
+			log.load(file3);
+			cus.load(file4);
 		}
 		
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
@@ -128,13 +131,13 @@ public class BaseFiles {
 		if(driver != null) {
 			
 		//Menu is Clicked.
-		driver.findElement(By.id("react-burger-menu-btn")).click();
+		driver.findElement(By.xpath(log.getProperty("xpath_burger_menu"))).click();
 		
 		//Menu - Logout
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		//Click Logout
-		driver.findElement(By.id("logout_sidebar_link")).click();
+		driver.findElement(By.xpath(log.getProperty("xpath_sidebar_logout"))).click();
 				
 		//Close Browser
 		driver.close();
@@ -143,8 +146,10 @@ public class BaseFiles {
 		driver.quit();
 		
 		} else {
-		
-			System.out.println("value of driver is = " + driver);
+			
+			System.out.println("Driver is Null");
+			System.out.println("Value of Driver is = " + driver);
+			
 		}
 		
 	}
